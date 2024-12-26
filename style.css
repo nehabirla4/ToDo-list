@@ -1,0 +1,74 @@
+body{
+    /* background-color: aqua;
+    height: 100vh; */
+    background-image:linear-gradient(rgba(190, 161, 214, 0.7),rgba(190, 161, 214, 0.7)) ,url(back.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+.todo-app{
+  max-width: 600px;
+  background-color: white;
+  padding: 20px 30px 50px;
+  margin:120px auto 15px;
+  border-radius: 15px;
+}
+
+.todo-app h1{
+    text-align: center;
+}
+form{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-bottom: 30px;;
+}
+input[type="text"]{
+    width:70%;
+    padding:20px;
+    border:4px solid plum;
+    border-radius: 15px;
+    font-size: 1rem;
+    margin-left:30px;
+}
+.btn{
+    background-color: rgb(210, 146, 240);
+    border:none;
+    color:aliceblue;
+    padding: 20px 30px;
+    cursor:pointer;
+    border-radius:15px;
+    font-size: 1.5rem;
+}
+.btn:hover{
+    background-color: rgb(213, 172, 230);
+}
+ul li{
+    list-style-type: none;
+    font-size: 1.1rem;
+    padding:10px 6px 10px 35px;
+    cursor:pointer;
+    position :relative
+}
+ul li:before{
+    content:"◻";	
+    font-size: 25px;
+    position:absolute;
+    left:-1px;
+    top:4px;
+}
+#task-list{
+    padding:0px 35px;
+}
+ul li.checked{
+   text-decoration:line-through ; 
+   color:aqua
+}
+ul li span{
+    padding-right: 8%;
+    position:absolute;
+    top:1.8px;
+    right:5px;
+    color:rgb(179, 46, 46);
+    font-size: 2rem;
+}
